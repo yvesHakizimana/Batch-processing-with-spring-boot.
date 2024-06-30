@@ -39,7 +39,7 @@ public class BatchConfig {
         //Skip the header (the first line containing the column names if present) while you are reading the csv
         reader.setLinesToSkip(1);
         //Transform the data read into a given entity depending on the businessLogic.
-        itemReader().setLineMapper(lineMapper());
+        reader.setLineMapper(lineMapper());
         return reader;
     }
 
