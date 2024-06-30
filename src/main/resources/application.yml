@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: batch-processing
+  datasource:
+    url: jdbc:postgresql://localhost:5432/file-upload
+    username: postgres
+    password: P0S1tiv@!
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
