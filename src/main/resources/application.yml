@@ -14,3 +14,10 @@ spring:
       hibernate:
         format_sql: true
     database: postgresql
+  batch:
+    jdbc:
+      initialize-schema: always
+    job:
+      enabled: false
+server:
+  port: 9090
