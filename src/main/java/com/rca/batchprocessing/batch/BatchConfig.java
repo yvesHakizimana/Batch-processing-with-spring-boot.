@@ -96,7 +96,7 @@ public class BatchConfig {
 
     }
 
-    //Finally run the job.
+    //Finally, run the job.
     @Bean
     public Job runJob(){
         return new JobBuilder("importStudents", jobRepository)
